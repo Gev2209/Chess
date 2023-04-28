@@ -1,0 +1,84 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(#ecd38b, #5e250b);
+  filter: blur(2);
+  background-repeat: no-repeat;
+}
+main {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 60px;
+  margin-left: 30px;
+  height: 90vh;
+  min-height: 500px ;
+}
+@media only screen and (max-width: 665px) {
+  main {
+    height: 50vh;
+    margin-top: 30px;
+  }
+}
+section {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 60px);
+  box-shadow: 3px 3px 6px black;
+  border: 1px solid #000;
+}
+section > div {
+  padding: 10px 0 10px 0;
+  width: 60px;
+  color: white;
+}
+@media only screen and (max-width: 665px) {
+  section > div {
+    width: 50px;
+    transition: all ease 0.8s;
+  }
+}
+section > div span {
+  text-align: left;
+}
+section .lightbrown {
+  background: #f0d37d;
+  color: white;
+  filter: grayscale(30%);
+}
+section .darkgreen {
+  background: #16c216;
+  filter: grayscale(40%);
+}
+section i {
+  color: #000000;
+  font-size: 40px;
+  margin-left: 5px;
+}
+section i:hover {
+  animation: chess 0.9s linear infinite;
+}
+@media only screen and (max-width: 665px) {
+  section i {
+    transition: all ease 0.8s;
+    font-size: 35px;
+  }
+}
+section .fa-chess-knight {
+  margin-left: 15px;
+}
+section .all {
+  margin-left: 15px;
+}
+@media only screen and (max-width: 665px) {
+  section .all {
+    margin-left: 10px;
+  }
+}
+section .sec {
+  color: white;
+}
+section .pawnall {
+  margin-left: 15px;
+}

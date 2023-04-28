@@ -1,0 +1,142 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image:  linear-gradient(#ecd38b, rgb(94, 37, 11));
+    filter: blur(2);
+    background-repeat: no-repeat;
+}
+
+
+main {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 60px;
+    margin-left: 30px;
+    height: 90vh;
+    min-height: 500px ;
+    @media only screen and (max-width:665px) {
+        height: 50vh;
+        margin-top: 30px;
+    }
+}
+section {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,60px);
+    box-shadow:3px 3px 6px black;
+    border: 1px solid #000;
+   
+    > div {
+        padding: 10px 0 10px 0;
+        width: 60px;
+        color: white;
+        @media only screen  and (max-width:665px ){
+            width: 50px;
+            transition: all ease .8s;
+    }
+        span {
+            text-align: left;
+        }
+    }
+    .lightbrown {
+        background: #f0d37d;
+            color: white;
+            filter: grayscale(30%);
+        
+    }
+    .darkgreen {
+        background: rgb(22, 194, 22);
+            filter: grayscale(40%);
+    }
+   i {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    margin-left: 5px;
+    &:hover {
+        animation: chess .9s linear infinite ;
+    }
+    @media only screen  and (max-width:665px ){
+        transition: all ease .8s;
+        font-size: 35px;
+    }
+   }
+   .fa-chess-knight {
+    margin-left:15px;
+   
+}
+
+.all {
+    margin-left: 15px;
+    @media only screen and (max-width:665px) {
+        margin-left: 10px;
+    }
+}
+
+.sec {
+    color: white;
+}
+.pawnall {
+    margin-left: 15px;
+}
+}
+// .chess {
+//     position: absolute;
+//     right: 30%;
+//     max-width: 300px;
+//     height: 30vh;
+//     min-height: 170px;
+//     background-image: linear-gradient(rgb(245, 183, 69),rgb(120, 202, 12));
+//     filter: grayscale(50%);
+//     filter: blur(1);
+//     border-radius: 20px;
+//     border: 3px solid #4e3a02;
+//     @media only screen and (max-width:1200px) {
+//         right: 20%;
+//     }
+//     @media only screen and (max-width:1030px) {
+//         right: 8%;
+//         max-width: 250px;
+//     }
+//     @media only screen and (max-width:880px) {
+//         right: 0%;
+//         max-width: 130px;
+//     }
+//     >.playCHess {
+//     p {
+//         color: black;
+//         &:nth-child(1) {
+//             position: absolute;
+//             right: 30%;
+//             bottom: 55%;
+//             color:rgb(58, 44, 7) ;
+//             font-size: 25px;
+//             margin-right: 20px;
+//             font-family: sans-serif;
+//             font-weight: 100;
+//             @media only screen and (max-width:880px) {
+//                 right: 4%;
+//             }
+//         }
+//         &:nth-child(2) {
+//             position: absolute;
+//             bottom: 15%;
+//             right: 25%;
+//             font-size: 20px;
+//             padding: 10px 0;
+//             color: rgb(0, 0, 0);
+//             border: 1px solid rgb(255, 219, 121);
+//             border-radius: 15px;
+//             width: 50%;
+//             text-align: center;
+//             cursor: pointer;
+//             &:hover {
+//                 box-shadow: inset 200px 0 #4b5802 ;
+//                 transition: all ease .8s;
+//                 color: white;
+//             }
+//         }
+//     }
+//     }
+// }
